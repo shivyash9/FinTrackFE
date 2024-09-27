@@ -1,0 +1,34 @@
+<single-spa-router>
+  <nav>
+    <application name="@fintrack/navbar"></application>
+  </nav>
+
+  <!-- Main Content Area -->
+  <main>
+    <route default>
+       <h1>Contact Yash</h1>
+    </route>
+
+    <route path="/login">
+      <application name="@fintrack/login"></application>
+    </route>
+
+    <route path="/signup">
+      <application name="@fintrack/signup"></application>
+    </route>
+
+    <route path="/dashboard">
+      <application name="@fintrack/dashboard"></application>
+    </route>
+
+    <!-- Add more routes for other micro frontends
+    <route path="/budgets">
+      <application name="@fintrack/budgets"></application>
+    </route>
+
+    <route path="/expenses">
+      <application name="@fintrack/expenses"></application>
+    </route> -->
+    
+  </main>
+</single-spa-router>
