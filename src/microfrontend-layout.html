@@ -6,7 +6,7 @@
   <!-- Main Content Area -->
   <main>
     <route default>
-       <h1>Contact Yash</h1>
+      <h1>Contact Yash</h1>
     </route>
 
     <route path="/login">
@@ -21,14 +21,78 @@
       <application name="@fintrack/dashboard"></application>
     </route>
 
-    <!-- Add more routes for other micro frontends
+    <!-- Modules list  -->
+
+    <route path="/analytics">
+      <div class="dashboard-layout">
+        <!-- Rendering dashboard's sidebar here -->
+        <application name="@fintrack/dashboard"></application>
+
+        <!-- Main content area for microfrontend -->
+        <div class="main-content">
+          <!-- <application name="@fintrack/analytics"></application> -->
+        </div>
+      </div>
+    </route>
+
     <route path="/budgets">
-      <application name="@fintrack/budgets"></application>
+      <div class="dashboard-layout">
+        <!-- Rendering dashboard's sidebar here -->
+        <application name="@fintrack/dashboard"></application>
+
+        <!-- Main content area for microfrontend -->
+        <div class="main-content">
+          <!-- <application name="@fintrack/budgets"></application> -->
+        </div>
+      </div>
     </route>
 
     <route path="/expenses">
-      <application name="@fintrack/expenses"></application>
-    </route> -->
-    
+      <div class="dashboard-layout">
+        <!-- Rendering dashboard's sidebar here -->
+        <application name="@fintrack/dashboard"></application>
+
+        <!-- Main content area for microfrontend -->
+        <div class="main-content">
+          <!-- <application name="@fintrack/expenses"></application> -->
+        </div>
+      </div>
+    </route>
+
+    <route path="/tenants">
+      <div class="dashboard-layout">
+        <!-- Rendering dashboard's sidebar here -->
+        <application name="@fintrack/dashboard"></application>
+
+        <!-- Main content area for microfrontend -->
+        <div class="main-content">
+          <!-- <application name="@fintrack/tenants"></application> -->
+        </div>
+      </div>
+    </route>
+
+    <route path="/currencies">
+      <div class="dashboard-layout">
+        <!-- Rendering dashboard's sidebar here -->
+        <application name="@fintrack/dashboard"></application>
+
+        <!-- Main content area for microfrontend -->
+        <div class="main-content">
+          <!-- <application name="@fintrack/currencies"></application> -->
+        </div>
+      </div>
+    </route>
+
+    <route path="/expense-categories">
+      <div class="dashboard-layout">
+        <!-- Rendering dashboard's sidebar here -->
+        <application name="@fintrack/dashboard"></application>
+
+        <!-- Main content area for microfrontend -->
+        <div class="main-content">
+          <!-- <application name="@fintrack/expense-categories"></application> -->
+        </div>
+      </div>
+    </route>
   </main>
 </single-spa-router>
